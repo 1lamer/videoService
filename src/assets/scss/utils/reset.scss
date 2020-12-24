@@ -92,12 +92,7 @@ video {
 // Links
 a {
   text-decoration: none;
-  &:active,
-  &:hover {
-    outline: 0;
-  }
 }
-
 // List
 ul,
 li {
@@ -125,9 +120,6 @@ html {
 *:before,
 *:after {
   box-sizing: border-box;
-}
-:focus {
-  outline: 0;
 }
 
 img,

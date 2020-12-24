@@ -1,7 +1,7 @@
 /* Fonts:
   https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
   ========================================================================== */
-
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 @import 'mixins';
 
 /*
@@ -32,8 +32,8 @@
 */
 
 // Base OpenSans:
-// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensans");
-// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensanslight", 300);
+@include font-face("Rubik", "../fonts/Rubik-Regular", 400);
+@include font-face("Rubik", "../fonts/Rubik-Medium", 500);
 // @include font-face("OpenSans", "/assets/fonts/OpenSans/opensanssemibold", 600);
 // @include font-face("OpenSans", "/assets/fonts/OpenSans/opensansbold", bold);
 
