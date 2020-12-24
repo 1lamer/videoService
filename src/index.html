@@ -4,29 +4,219 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Template</title>
+    <title>Video service</title>
   </head>
   <body>
-    <div class="wrapper">
       <div id="app">
-        <header></header>
 
-        <div class="content-wrapper">
-          <!-- expamle section (remove me) -->
-          <section id="promo" style="text-align:center;">
+        <div class="wrapper">
+
             <div class="container">
-              <h1>Webpack Template</h1>
+
+              <header class="header">
+                  
+                  <div class="row">
+
+                    <a href="#" class="header__company">
+                      <svg class="header__logo" width="40" height="40">
+                        <use xlink:href="./assets/img/sprite.svg#logo"></use>
+                      </svg>
+                      Videoservice
+                    </a>
+
+                    <form class="header__sreach search">
+                      <input class="search__input" type="search" placeholder="Search...">
+                      <button class="search__button button button--simple" type="submit">Search</button>
+                    </form>
+
+                    <button type="button" class="button button--rect">Sign up</button>
+
+                  </div>
+              </header>
+              <!-- header -->
+
+              <main class="main">
+
+                <nav class="nav">
+                  <a href="#" class="nav__item">
+                    Movies
+                  </a>
+                  <a href="#" class="nav__item">
+                    TV channels
+                  </a>
+                </nav>
+
+                <div id="app-content">
+                  
+                  <section class="channels">
+
+                    <ul class="channels__list">
+
+                      <li class="channels__item channels__item--cbs">
+
+                        <h3 class="channels__name">CBS</h3>
+
+                        <ul class="channels__programs">
+
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              Young Sheldon
+                            </a>
+                          </li>
+
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              48 Hours
+                            </a>
+                          </li>
+
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              FBI
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- channels__programs -->
+                      </li>
+                      <!-- channels__item -->
+
+                      <li class="channels__item channels__item--nickelodeon">
+
+                        <h3 class="channels__name">Nickelodeon</h3>
+
+                        <ul class="channels__programs">
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              Young Sheldon
+                            </a>
+                          </li>
+
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              Young Sheldon
+                            </a>
+                          </li>
+
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              Young Sheldon
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- channels__programs -->
+                      </li>
+                      <!-- channels__item -->
+
+                      <li class="channels__item channels__item--abc">
+
+                        <h3 class="channels__name">ABC</h3>
+
+                        <ul class="channels__programs">
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              Young Sheldon
+                            </a>
+                          </li>
+
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              Young Sheldon
+                            </a>
+                          </li>
+
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              Young Sheldon
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- channels__programs -->
+                      </li>
+                      <!-- channels__item -->
+
+                      <li class="channels__item channels__item--fox">
+
+                        <h3 class="channels__name">Fox</h3>
+
+                        <ul class="channels__programs">
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              Young Sheldon
+                            </a>
+                          </li>
+
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              Young Sheldon
+                            </a>
+                          </li>
+
+                          <li class="channels__show">
+                            <a href="" class="channels__show-link">
+                              <time class="time" datetime="PT2H30M">2:30 PM</time>
+                              Young Sheldon
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- channels__programs -->
+                      </li>
+                      <!-- channels__item -->
+                    </ul>
+                    <!-- channels__list -->
+                  </section>
+                  <!-- channels -->
+                </div>
+                <!-- app-content -->
+              </main>
+              <!-- main -->
+
+              <footer class="footer">
+                <p class="footer__info">
+                  Made by Dyakonov Vadim
+                </p>
+                <nav class="footer__contacts">
+                  <a href="#" class="footer__link">
+                    <span class="visually-hidden">Upwork</span>
+
+                    <svg class="footer__icon" width="40" height="40">
+                      <use xlink:href="./assets/img/sprite.svg#upwork"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="footer__link">
+                    <span class="visually-hidden">LinkedIn</span>
+
+                    <svg class="footer__icon" width="40" height="40">
+                      <use xlink:href="./assets/img/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="footer__link">
+                    <span class="visually-hidden">Github</span>
+
+                    <svg class="footer__icon" width="40" height="40">
+                      <use xlink:href="./assets/img/sprite.svg#github"></use>
+                    </svg>
+                  </a>
+                </nav>
+              </footer>
+              <!-- footer -->
             </div>
-          </section>
-
-          <!-- expamle vue component -->
-          <example-component />
+            <!-- container -->
         </div>
-
-        <footer></footer>
-      </div>
-      <!-- end #app wrapper -->
+        <!-- end main wrapper -->
     </div>
-    <!-- end main wrapper -->
+    <!-- end #app wrapper -->
   </body>
 </html>

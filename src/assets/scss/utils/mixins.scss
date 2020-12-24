@@ -1,5 +1,23 @@
 /* Mixins:
   ========================================================================== */
+// Button click animation 
+@mixin clickAnimation {
+  &:hover {
+    transform: translateY(-1px);
+    transition: all 0.2s;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+// Flex algning 
+@mixin flexAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 // px to rem
 @function rem($pixels, $context: $mainFontSize) {
@@ -75,8 +93,7 @@
     font-weight: $weight;
     font-style: $style;
 
-    src: url('#{$file-path}.woff') format('woff'),
-      url('#{$file-path}.woff2') format('woff2');
+    src: url('#{$file-path}.woff') format('woff');
   }
 }
 

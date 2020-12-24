@@ -2,15 +2,15 @@
   ========================================================================== */
 
 // Font
-$mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+$mainFont                : Rubik, Helvetica, Arial, sans-serif;
 
 // Size
-$mainFontColor           : #101010;
-$mainFontSize            : 18px;
+$mainFontColor           : #333333;
+$mainFontSize            : 16px;
 $mainFontWeight          : 400;
 $mainLineHeight          : 1.4;
 
-$desktopWidth            : 1280px;
+$desktopWidth            : 1200px;
 $smDesktopWidth          : 1024px;
 $tableWidth              : 768px;
 $smTableWidth            : 640px;
@@ -23,8 +23,8 @@ $smPhoneWidth            : 320px;
 */
 
 // Main color
-$default-color           : #ffffff;
-$primary-color           : #444ce0;
+$default-color           : #000000;
+$primary-color           : #e5261e;
 $success-color           : #26de81;
 $danger-color            : #fc5c65;
 $warning-color           : #fed330;
