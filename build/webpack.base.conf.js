@@ -38,7 +38,7 @@ module.exports = {
       publicPath: '/' - relative path for dist folder (js,css etc)
       publicPath: './' (dot before /) - absolute path for dist folder (js,css etc)
     */
-    publicPath: '',
+    publicPath: ''
   },
   optimization: {
     splitChunks: {
@@ -84,7 +84,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: `../img/icons/[name].[ext]`,
+          name: `../img/[folder]/[name].[ext]`,
           emitFile: false,
         }
       },
@@ -93,7 +93,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           'style-loader',
-           MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: { sourceMap: true }
